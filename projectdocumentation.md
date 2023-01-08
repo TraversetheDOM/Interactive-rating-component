@@ -102,7 +102,7 @@ class InteractiveRatingComponent {
 	}
 
 	#submitRating(evtObj) {
-			if(!evtObj.target.classList.contains('btn__submit')) return; 
+			if(!evtObj.target.classList.contains('btn__submit') || !this.#gratitudeRating.firstElementChild.innerHTML) return; 
 			evtObj.currentTarget.classList.add('hide'); 
 			this.#gratitudeComponent.classList.remove('hide'); 
 		}
@@ -142,7 +142,7 @@ class InteractiveRatingComponent {
 	}
 
 	#submitRating(evtObj) {
-			if(!evtObj.target.classList.contains('btn__submit')) return; 
+			if(!evtObj.target.classList.contains('btn__submit') || !this.#gratitudeRating.firstElementChild.innerHTML) return; 
 			evtObj.currentTarget.classList.add('hide'); 
 			this.#gratitudeComponent.classList.remove('hide'); 
 		}
@@ -206,7 +206,7 @@ class InteractiveRatingComponent {
 
 	// Handling the submit button 
 	#submitRating(evtObj) {
-			if(!evtObj.target.classList.contains('btn__submit')) return; 
+			if(!evtObj.target.classList.contains('btn__submit') || !this.#gratitudeRating.firstElementChild.innerHTML) return; 
 			evtObj.currentTarget.classList.add('hide'); 
 			this.#gratitudeComponent.classList.remove('hide'); 
 	}
@@ -237,14 +237,14 @@ class InteractiveRatingComponent{
 	}
 
 	#submitRating(evtObj) {
-		if(!evtObj.target.classList.contains('btn__submit')) return; 
+		if(!evtObj.target.classList.contains('btn__submit') || !this.#gratitudeRating.firstElementChild.innerHTML) return; 
 		evtObj.currentTarget.classList.add('hide'); 
 		this.#gratitudeComponent.classList.remove('hide'); 
 	}
 }
 ```
 
-- When the event object is passed in we have to check if the element that triggers the event contains the class for the submit button and if it does not nothing should happen.
+- When the event object is passed in we have to check if the element that triggers the event contains the class for the submit button **OR** if the `this.#gratitudeRating.firstElementChild.innerHTML` is **falsy** and if it does not nothing should happen.
 - In the case that happens, we want to add the `hide` class to the parent element of the submit button element which is the element that the eventListener is attached to and we make use of the currentTarget property in the event object.
 - Finally we have to remove that hide class already existing on the “Thank you” to display the feeback.
 
