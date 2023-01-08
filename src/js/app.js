@@ -13,7 +13,7 @@ class InteractiveRatingComponent {
 
 	// Take advantge of Event Propagation to handle the submit button. 
 		#submitRating(evtObj) {
-			if(!evtObj.target.classList.contains('btn__submit')) return; 
+			if(!evtObj.target.classList.contains('btn__submit') || !this.#gratitudeRating.firstElementChild.innerHTML) return; 
 			evtObj.currentTarget.classList.add('hide'); 
 			this.#gratitudeComponent.classList.remove('hide'); 
 		}
@@ -21,7 +21,11 @@ class InteractiveRatingComponent {
 	// Handling the buttons. 	
 		#selectRating(evtObj) {
 			const clickedButton = evtObj.target.closest('.btn'); 
-			if (!clickedButton) return; 
+			console.log(clickedButton); 
+
+			// if (!clickedButton) return; 
+
+
 			for(let i = 0; i < this.#ratingButtons.length; i++) {
 				this.#ratingButtons[i].classList.remove('btn__active'); 
 			}
