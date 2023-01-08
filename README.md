@@ -5,7 +5,7 @@
 
   A Fully Interactive Rating Component  <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://interactive-rating-compenent.netlify.app/"><strong>➥ Live Demo</strong></a>
+  <a href="https://ratings-interactive-component.netlify.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
