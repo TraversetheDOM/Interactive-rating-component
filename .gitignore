@@ -14,3 +14,7 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# Avoid the project having the node_mdules files and the parcel-cache folder
+node_modules
+.parcel-cache

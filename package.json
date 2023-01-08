@@ -1,0 +1,27 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "default": "index.html",
+  "browserslist": "> 1%, last 2 versions, not dead, not ie 11",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "parcel index.html", 
+		"build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salutDami/Interactive-rating-component.git"
+  },
+  "author": "Stephen Ikuomola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salutDami/Interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/salutDami/Interactive-rating-component#readme",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.1",
+    "@parcel/transformer-webmanifest": "^2.8.1",
+    "parcel": "^2.8.1"
+  }
+}
