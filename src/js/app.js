@@ -21,11 +21,7 @@ class InteractiveRatingComponent {
 	// Handling the buttons. 	
 		#selectRating(evtObj) {
 			const clickedButton = evtObj.target.closest('.btn'); 
-			console.log(clickedButton); 
-
-			// if (!clickedButton) return; 
-
-
+			if (!clickedButton) return; 
 			for(let i = 0; i < this.#ratingButtons.length; i++) {
 				this.#ratingButtons[i].classList.remove('btn__active'); 
 			}
