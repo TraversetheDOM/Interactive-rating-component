@@ -14,15 +14,6 @@
   <!-- Rating state end -->
 
 
-
-
-
-
-
-
-
-
-
  <!-- Thank you state start -->
 
   You selected <!-- Add rating here --> out of 5
@@ -37,10 +28,6 @@
 
 
 
-   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 
 
