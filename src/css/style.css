@@ -151,11 +151,6 @@
   color: var(--white); 
 }
 
-.btn:hover {
-  background-color: var(--orange); 
-  color: var(--white); 
-}
-
 
 .btn__submit {
   color: var(--white);
@@ -173,9 +168,17 @@
   transition-duration: 1s, 2s
 }
 
-.btn__submit:hover {
-  color: var(--orange); 
-  background-color: var(--white);
+/* I only want this hover state on devices that have support hover. Mobile devices do not have this hover state.  */
+@media (hover: hover) {
+  .btn__submit:hover {
+    color: var(--orange); 
+    background-color: var(--white);
+  }
+
+  .btn:hover {
+    background-color: var(--orange); 
+    color: var(--white); 
+  }
 }
 
 
