@@ -32,7 +32,7 @@ To run **interactive ratings component** locally run this command on your git b
 Linux and MacOs:
 
 ```bash
-sudo git clone https://github.com/salutDami/Interactive-rating-component.git
+sudo git clone https://github.com/TraversetheDOM/Interactive-rating-component.git
 
 npm install
 
@@ -43,7 +43,7 @@ npm run start
 Windows: 
 
 ```bash
-git clone https://github.com/salutDami/Interactive-rating-component.git
+git clone https://github.com/TraversetheDOM/Interactive-rating-component.git
 
 npm install 
 
