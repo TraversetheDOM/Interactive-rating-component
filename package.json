@@ -7,18 +7,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
     "start": "parcel index.html", 
-		"build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TraversetheDOM/Interactive-rating-component.git"
+    "url": "git+https://github.com/stephenikuomola/Interactive-rating-component.git"
   },
   "author": "Stephen Ikuomola",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TraversetheDOM/Interactive-rating-component/issues"
+    "url": "https://github.com/stephenikuomola/Interactive-rating-component/issues"
   },
-  "homepage": "https://github.com/TraversetheDOM/Interactive-rating-component#readme",
+  "homepage": "https://github.com/stephenikuomola/Interactive-rating-component#readme",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.8.1",
     "@parcel/transformer-webmanifest": "^2.8.1",
